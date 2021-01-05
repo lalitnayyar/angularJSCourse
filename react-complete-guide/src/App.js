@@ -25,8 +25,8 @@ class App extends Component {
     person.name = event.target.value;
 
     const persons = [...this.state.persons];
-    persons[personIndex]  = person;
-    this.setState({ persons: persons});
+    persons[personIndex] = person;
+    this.setState({ persons: persons });
   };
 
   deletePersonalHandler = (personIndex) => {
@@ -43,7 +43,8 @@ class App extends Component {
   };
   render() {
     const style = {
-      backgroundColor: "blue",
+      backgroundColor: "green",
+      color: 'white',
       font: "inherit",
       border: "1x solid yellow",
       padding: "8px",
@@ -68,6 +69,7 @@ class App extends Component {
           })}
         </div>
       );
+      style.backgroundColor ='red';
     }
 
     return (
